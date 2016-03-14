@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+.container {
+    padding: 20px;
+    background-color: #eee;
+    border: solid #999;
+    overflow: hidden;
+}
+
+.container .center {
+    float: left;
+    width: 100%;
+}
+
+.container .center .content {
+    background-color: burlywood;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 120px;
+}
+
+.container .left {
+    float: left;
+    width: 200px;
+    margin-left: -100%
+}
+
+.container .left .content {
+    background-color: white;
+    padding: 20px;
+}
+
+.container .left .content img {
+    vertical-align: text-top;
+}
+
+.container .right {
+    float: left;
+    width: 120px;
+    margin-left: -120px
+}
+
+.container .right .content {
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}

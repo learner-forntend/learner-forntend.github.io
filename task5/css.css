@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+header {
+    background-color: #121212;
+    line-height: 60px;
+}
+
+header img {
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    list-style-type: circle;
+
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.nav ul li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.nav ul li a:active {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    background-color: #cccccc;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+
+/*container*/
+.container {
+    float: left;
+    width: 100%;
+
+}
+
+.container .content {
+    margin-left: 20px;
+    margin-right: 400px;
+
+}
+
+.container .content article {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 6px 5px 4px #888888;
+    margin-bottom: 20px;
+}
+
+.container .content article h1 {
+    line-height: 40px;
+}
+
+.container .content article h3 {
+    line-height: 40px;
+    color: #888888;
+}
+
+.container .content article h6 {
+    line-height: 20px;
+    color: #999999;
+}
+
+.container .content article p {
+    line-height: 2em;
+    text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+}
+
+.container .content ul li {
+    line-height: 2em;
+    text-indent: 2em;
+    display: block;
+}
+
+.container .content article.pictures {
+    overflow: hidden;
+}
+
+.container .content article.pictures .img {
+    text-align: center;
+    border: solid 1px #cccccc;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.container .content article.pictures .img img {
+    margin: 5px;
+    float: left;
+}
+
+.container .content article ol {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.container .content article ol li {
+    line-height: 2em;
+}
+
+.container .content article table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 96%;
+    margin-left: 1em;
+
+}
+
+.container .content article table td {
+    border: 1px solid #888888;
+    height: 2em;
+}
+
+.container .content article table thead {
+    color: white;
+    background-color: #121212;
+}
+
+.container .content article table tfoot {
+
+    background-color: #888888;
+}
+
+.container .content article table tfoot td{
+
+    background-color: #888888;
+}
+
+/*aside*/
+aside {
+    width: 380px;
+    right: 0;
+    margin-left: -380px;
+    top: 20px;
+    float: left;
+
+}
+
+aside .content {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 6px 5px 4px #888888;
+
+}
+
+aside .title {
+    line-height: 40px;
+    padding-left: 20px;
+    border-left: solid 3px #cccccc;
+}
+
+aside ul {
+    line-height: 40px;
+}
+
+aside ul li {
+    display: inline-block;
+}
+
+aside ul li.label {
+    width: 150px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+aside ul.tip-line {
+    line-height: 20px;
+    color: #cccccc;
+}
+
+aside ul li.tip {
+    margin-top: -10px;
+    font-size: small;
+    color: #cccccc;
+}
+
+aside ul li textarea {
+    vertical-align: top;
+}
+
+aside button {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 290px;
+    color: white;
+    background-color: dodgerblue;
+    line-height: 35px;
+    border-radius: 8px;
+
+}
+
+
+/*footer*/
+
+footer{
+    line-height: 80px;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+}
