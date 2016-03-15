@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #cccccc;
+}
+
+.container {
+    background-color: white;
+    width: 892px;
+    height: 1386px;
+    margin: auto;
+    padding: 0 44px;
+}
+
+header {
+    position: relative;
+    border-bottom: solid 2px #938e83;
+    overflow: hidden;
+
+}
+
+header .site {
+    position: relative;
+    padding-bottom: 0;
+    float: left;
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    font-size: 12px;
+}
+
+header .site p {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    color: #ffffff;
+    font-family: "Arial Black"
+}
+
+header span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    vertical-align: bottom;
+    color: #d45d5c;
+    font-family: "Arial Black"
+}
+
+.middle {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.middle .middle-main {
+    width: 641px;
+}
+
+.middle .picture-container {
+    display: inline-block;
+    position: relative;
+}
+
+.middle .picture-container img {
+    height: 301px;
+}
+
+.middle .picture-container .cover {
+    top: 0;
+    position: absolute;
+    opacity: 0.3;
+    width: 191px;
+    height: 301px;
+    z-index: 1;
+
+}
+
+.middle .picture-container .left-cover {
+    left: 0;
+    background-color: green;
+}
+
+.middle .picture-container .right-cover {
+    right: 0;
+    background-color: red;
+}
+
+.middle .middle-main .news {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+}
+
+.middle .middle-main .news div{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    padding: 20px;
+}
+
+
+.middle .aside {
+    float: right;
+    display: block;
+    margin-right: 21px;
+    width: 203px;
+    border-top: solid 2px #cc8094;
+}
+
+.middle .aside p.title {
+    line-height: 24px;
+    font-family: "Microsoft Sans Serif";
+    margin-top: 16px;
+
+}
+
+.middle .aside p.description {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #676767;
+    font-family: STKaiti;
+}
+
+.middle .aside span.wrap {
+    vertical-align: bottom;
+    display: inline;
+    border-bottom: solid 2px #000000;
+}
+
+.middle .aside span .big {
+    font-size: 24px;
+}
+
+.middle .aside .big-font {
+    line-height: 1.1em;
+    font-size: 116px;
+    color: #75b86b;
+}
+
+.middle .aside .first-letter {
+    font-size: 55px;
+    color: #cc8091;
+
+}
+
+.middle .aside .sub-letter {
+
+    display: inline-block;
+}
+
+.middle .aside .sub-letter .high {
+    font-size: 21px;
+    color: #cc8091;
+}
+
+.middle .aside .sub-letter .low {
+    font-size: 12px;
+    color: #999999;
+}
