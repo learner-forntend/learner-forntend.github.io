@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{font-family:黑体;}
+div{margin:10px 10px 50px 10px;}
+
+.rank table, th, tr, td{border:1px solid #ffffff; text-align:left;}
+.rank th{background-color:#000000; color:#ffffff;}
+.rank tr{color:#ff0000;}
+.rank tr:nth-of-type(odd){background-color:#ffffff;}
+.rank tr:nth-of-type(even){background-color:#dddddd;}
+.rank tr:nth-of-type(n+4){color:#000000;}
+
+.input{width:200px; border-radius:5px; border:1px solid #c0c0c0;}
+.input:focus{width:300px; transition:1s;}
