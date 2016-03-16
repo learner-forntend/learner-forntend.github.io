@@ -1,13 +1,228 @@
 @charset "utf-8";
-body{font-family:黑体;}
-div{margin:10px 10px 50px 10px;}
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
-.rank table, th, tr, td{border:1px solid #ffffff; text-align:left;}
-.rank th{background-color:#000000; color:#ffffff;}
-.rank tr{color:#ff0000;}
-.rank tr:nth-of-type(odd){background-color:#ffffff;}
-.rank tr:nth-of-type(even){background-color:#dddddd;}
-.rank tr:nth-of-type(n+4){color:#000000;}
+body {
+  font-family: 黑体;
+}
 
-.input{width:200px; border-radius:5px; border:1px solid #c0c0c0;}
-.input:focus{width:300px; transition:1s;}
+div {
+  margin: 10px 10px 50px 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rank table,
+th,
+tr,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+.rank th {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.rank tr {
+  color: #ff0000;
+}
+
+.rank tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.rank tr:nth-of-type(even) {
+  background-color: #dddddd;
+}
+
+.rank tr:nth-of-type(n+4) {
+  color: #000000;
+}
+
+.input {
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+.input:focus {
+  width: 300px;
+  transition: 1s;
+}
+
+.banner {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes bannerchange1 {
+  0% {
+    background: blue;
+    left: -100%;
+  }
+  16% {
+    background: blue;
+    left: 0%;
+  }
+  33% {
+    background: blue;
+    left: 0%;
+  }
+  50% {
+    background: blue;
+    left: 100%;
+  }
+  67% {
+    background: blue;
+    left: 100%;
+  }
+  83% {
+    background: blue;
+    left: 100%;
+  }
+  100% {
+    background: blue;
+    left: 100%;
+  }
+}
+
+@keyframes bannerchange2 {
+  0% {
+    background: green;
+    left: -100%;
+  }
+  16% {
+    background: green;
+    left: -100%;
+  }
+  33% {
+    background: green;
+    left: -100%;
+  }
+  50% {
+    background: green;
+    left: 0%;
+  }
+  67% {
+    background: green;
+    left: 0%;
+  }
+  83% {
+    background: green;
+    left: 100%;
+  }
+  100% {
+    background: green;
+    left: 100%;
+  }
+}
+
+@keyframes bannerchange3 {
+  0% {
+    background: red;
+    left: -100%;
+  }
+  16% {
+    background: red;
+    left: -100%;
+  }
+  33% {
+    background: red;
+    left: -100%;
+  }
+  50% {
+    background: red;
+    left: -100%;
+  }
+  67% {
+    background: red;
+    left: -100%;
+  }
+  83% {
+    background: red;
+    left: 0%;
+  }
+  100% {
+    background: red;
+    left: 0%;
+  }
+}
+
+.bannerchange {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  background-color: red;
+  overflow: hidden;
+}
+
+.bannerchange li:nth-of-type(1) {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  animation: bannerchange1 15s infinite;
+  animation-fill-mode: forwards;
+}
+
+.bannerchange li:nth-of-type(2) {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  animation: bannerchange2 15s infinite;
+  animation-fill-mode: forwards;
+}
+
+.bannerchange li:nth-of-type(3) {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  animation: bannerchange3 15s infinite;
+  animation-fill-mode: forwards;
+}
+
+.button {
+  z-index: 5;
+  display: inline-box;
+  width: 75px;
+  height: 20px;
+  margin: 0px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding-top: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.button>li {
+  border: 1px solid #000000;
+  padding: 0px 3px;
+}
+
+#pic1:target {}
+
+#pic2:target {}
+
+#pic3:target {}
