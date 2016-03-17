@@ -328,13 +328,12 @@ main {
 
 .city-activity .search .drop-down ul li.active {
 
-     background-color: #E84E4C;
+    background-color: #E84E4C;
     background-image: url("images/letter-chosen.png");
     background-repeat: no-repeat;
     background-position: 15px 10px;
-     color: white;
- }
-
+    color: white;
+}
 
 .city-activity .activity-photo {
     height: 606px;
@@ -552,12 +551,13 @@ main {
 }
 
 .form main {
-    padding-left: 100px;
-    padding-right: 100px;
+
 }
 
 .form main ul {
     list-style: none;
+    display: inline-block;
+    margin-left: 75px;
 }
 
 .form main li {
@@ -709,20 +709,20 @@ footer .foot-back {
     background-color: #2f3038;
 }
 
-footer .foot-back span:first-child{
+footer .foot-back span:first-child {
     position: absolute;
     margin-left: 200px;
     color: white;
 }
 
-footer .foot-back span:last-child{
+footer .foot-back span:last-child {
     position: absolute;
     vertical-align: bottom;
     right: 200px;
     color: white;
 }
 
-footer .foot-back a{
+footer .foot-back a {
     color: white;
     text-decoration: none;
 }
