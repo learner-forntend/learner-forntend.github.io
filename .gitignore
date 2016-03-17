@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 /gulpfile.js
 /node_modules
 /package.json
+=======
+/node_modules
+/package.json
+/gulpfile.js
+>>>>>>> jerry
 /.idea
