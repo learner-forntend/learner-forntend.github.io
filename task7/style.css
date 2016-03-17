@@ -55,19 +55,11 @@ ul.switch-box li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-<<<<<<< HEAD
-    border: 1px solid var(--ques--font-color);
-}
-
-ul.switch-box li.on {
-    background: var(--ques--font-color);
-=======
     border: 1px solid #777777;
 }
 
 ul.switch-box li.on {
     background: #777777;
->>>>>>> jerry
 }
 
 * {
@@ -117,11 +109,7 @@ nav .nav-list ul li {
 
 nav .nav-list ul li:last-child {
     cursor: pointer;
-<<<<<<< HEAD
-    color: var(--main--red);
-=======
     color: #E84E4C;
->>>>>>> jerry
 }
 
 nav .nav-list ul li:last-child img {
@@ -129,21 +117,12 @@ nav .nav-list ul li:last-child img {
 }
 
 nav .nav-list ul li.active {
-<<<<<<< HEAD
-    color: var(--main--red);
-    border-bottom: solid 4px var(--main--red);
-}
-
-nav .nav-list ul li.active a {
-    color: var(--main--red);
-=======
     color: #E84E4C;
     border-bottom: solid 4px #E84E4C;
 }
 
 nav .nav-list ul li.active a {
     color: #E84E4C;
->>>>>>> jerry
 }
 
 nav .nav-list ul li a {
@@ -181,20 +160,12 @@ main {
 .model-picture .container p:first-child {
     font-size: 60px;
     font-weight: bold;
-<<<<<<< HEAD
-    color: var(--main--white);
-=======
     color: white;
->>>>>>> jerry
 
 }
 
 .model-picture .container p:nth-child(2) {
-<<<<<<< HEAD
-    color: var(--main--white);
-=======
     color: white;
->>>>>>> jerry
     width: 220px;
     line-height: 30px;
     font-size: larger;
@@ -206,15 +177,9 @@ main {
     width: 300px;
     height: 60px;
     display: inline-block;
-<<<<<<< HEAD
-    background-color: var(--main--red);
-    border: none;
-    color: var(--main--white);
-=======
     background-color: #E84E4C;
     border: none;
     color: white;
->>>>>>> jerry
     font-size: 20px;
 }
 
@@ -252,11 +217,7 @@ main {
 
 .ques {
     width: 100%;
-<<<<<<< HEAD
-    background-color: var(--ques--grey);
-=======
     background-color: #EDEDED;
->>>>>>> jerry
     height: 350px;
     text-align: center;
     display: table;
@@ -269,11 +230,7 @@ main {
 }
 
 .ques .container p {
-<<<<<<< HEAD
-    color: var(--ques--font-color);
-=======
     color: #777777;
->>>>>>> jerry
     font-size: 50px;
     font-weight: bold;
     margin-top: 60px;
@@ -329,20 +286,12 @@ main {
 }
 
 .city-activity .search .input input.active {
-<<<<<<< HEAD
-    border: solid var(--main--red) 1px;
-=======
     border: solid #E84E4C 1px;
->>>>>>> jerry
 
 }
 
 .city-activity .search .input input:last-child {
-<<<<<<< HEAD
-    background: var(--main--red);
-=======
     background: #E84E4C;
->>>>>>> jerry
     border: none;
     height: 39px;
     color: white;
@@ -361,11 +310,7 @@ main {
     background: #EDE9Ef;
     left: 377px;
 
-<<<<<<< HEAD
-    border: 1px solid var(--main--red);
-=======
     border: 1px solid #E84E4C;
->>>>>>> jerry
     border-top: none;
 }
 
@@ -383,19 +328,6 @@ main {
 
 .city-activity .search .drop-down ul li.active {
 
-<<<<<<< HEAD
-     background-color: var(--main--red);
-    background-image: url("images/letter-chosen.png");
-    background-repeat: no-repeat;
-    background-position: 15px 10px;
-     color: white;
- }
-
-
-.city-activity .activity-photo {
-    height: 606px;
-    background-color: var(--ques--grey);
-=======
     background-color: #E84E4C;
     background-image: url("images/letter-chosen.png");
     background-repeat: no-repeat;
@@ -406,7 +338,6 @@ main {
 .city-activity .activity-photo {
     height: 606px;
     background-color: #EDEDED;
->>>>>>> jerry
     display: table;
     width: 100%;
     text-align: center;
@@ -513,21 +444,13 @@ main {
 
 .time .right-text button {
     cursor: pointer;
-<<<<<<< HEAD
-    outline: solid 1px var(--main--red);
-=======
     outline: solid 1px #E84E4C;
->>>>>>> jerry
     border: none;
     background: none;
     width: 100px;
     height: 30px;
     font-size: 14px;
-<<<<<<< HEAD
-    color: var(--main--red);
-=======
     color: #E84E4C;
->>>>>>> jerry
 }
 
 .time .right-text p:nth-child(1) {
@@ -563,11 +486,7 @@ main {
 }
 
 .time .left-card-1 {
-<<<<<<< HEAD
-    background-color: var(--main--red);
-=======
     background-color: #E84E4C;
->>>>>>> jerry
     color: white;
 }
 
@@ -580,17 +499,6 @@ main {
 }
 
 .time .left-card-2 hr {
-<<<<<<< HEAD
-    background-color: var(--main--red);
-}
-
-.time .left-card-2 {
-    color: var(--main--red);
-}
-
-.time .left-card-2 button {
-    color: var(--main--red);
-=======
     background-color: #E84E4C;
 }
 
@@ -600,7 +508,6 @@ main {
 
 .time .left-card-2 button {
     color: #E84E4C;
->>>>>>> jerry
 }
 
 .time .right-card {
@@ -632,11 +539,7 @@ main {
 }
 
 .form header .line {
-<<<<<<< HEAD
-    background-color: var(--main--red);
-=======
     background-color: #E84E4C;
->>>>>>> jerry
     margin: 25px auto;
 
 }
@@ -648,21 +551,13 @@ main {
 }
 
 .form main {
-<<<<<<< HEAD
-    padding-left: 100px;
-    padding-right: 100px;
-=======
 
->>>>>>> jerry
 }
 
 .form main ul {
     list-style: none;
-<<<<<<< HEAD
-=======
     display: inline-block;
     margin-left: 75px;
->>>>>>> jerry
 }
 
 .form main li {
@@ -704,11 +599,7 @@ main {
 .form main li.form-input input {
     margin-left: 10px;
     font-size: 16px;
-<<<<<<< HEAD
-    background: var(--ques--grey);
-=======
     background: #EDEDED;
->>>>>>> jerry
     border: none;
     outline: none;
     width: 200px;
@@ -717,11 +608,7 @@ main {
 
 .form main li.form-input span {
     display: inline-block;
-<<<<<<< HEAD
-    background: var(--ques--grey);
-=======
     background: #EDEDED;
->>>>>>> jerry
     height: 50px;
     line-height: 50px;
     width: 330px;
@@ -740,11 +627,7 @@ main {
 
 .form main li.form-input div.textarea textarea {
     margin-left: 20px;
-<<<<<<< HEAD
-    background: var(--ques--grey);
-=======
     background: #EDEDED;
->>>>>>> jerry
     border: none;
     outline: none;
     width: 675px;
@@ -769,11 +652,7 @@ footer {
 
 footer .contact {
     width: 100%;
-<<<<<<< HEAD
-    background-color: var(--footer--color);
-=======
     background-color: #32353E;
->>>>>>> jerry
     height: 380px;
 }
 
@@ -827,38 +706,23 @@ footer .foot-back {
     position: relative;
     line-height: 60px;
     height: 60px;
-<<<<<<< HEAD
-    background-color: var(--footer--balckcolor);
-}
-
-footer .foot-back span:first-child{
-=======
     background-color: #2f3038;
 }
 
 footer .foot-back span:first-child {
->>>>>>> jerry
     position: absolute;
     margin-left: 200px;
     color: white;
 }
 
-<<<<<<< HEAD
-footer .foot-back span:last-child{
-=======
 footer .foot-back span:last-child {
->>>>>>> jerry
     position: absolute;
     vertical-align: bottom;
     right: 200px;
     color: white;
 }
 
-<<<<<<< HEAD
-footer .foot-back a{
-=======
 footer .foot-back a {
->>>>>>> jerry
     color: white;
     text-decoration: none;
 }
