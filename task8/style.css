@@ -18,13 +18,13 @@
     }
 }
 
-.container .row div[class*='col-'] {
-    text-align: center;
-    padding: 5px;
-}
 
-.container .row div.box{
-    background: rgba(0,0,0,0.2);
+
+.container .row div.box {
+    text-align: center;
+    font-size: 12px;
+    border: solid red 1px;
+    background: rgba(0, 0, 0, 0.2);
     color: red;
     line-height: 40px;
     height: 40px;
