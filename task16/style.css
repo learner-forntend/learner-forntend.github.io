@@ -1,0 +1,52 @@
+button{
+  outline: none;
+  border: none;
+  line-height: 30px;
+  margin-left:20px
+
+}
+
+label {
+  display: inline-block;;
+  width: 260px;
+  text-align: right;
+  margin-top: 10px
+}
+label  input{
+
+  height: 30px;
+
+}
+
+table{
+  margin-top: 20px;
+  margin-left: 20px;
+  border-collapse: collapse;
+}
+table td{
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  width: 70px;
+
+}
+table button{
+  display: block;;
+  width: 50px;
+  background-color: #47b5f2;
+  margin-left: 10px;
+  border:solid 2px;
+}
+
+table button:target{
+
+  background-color:  #71a8f4;
+
+}
+table tr:nth-child(even){
+  background-color: #47b5f2 ;
+}
+
+table tr:hover{
+  background-color: #71a8f4;
+}
