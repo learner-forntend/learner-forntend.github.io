@@ -1,0 +1,11 @@
+#for_queue div {
+
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

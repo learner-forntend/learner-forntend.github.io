@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>task18</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="clickArea">
+    <input id="in">
+    <button id="left_in">左侧入</button>
+    <button id="right_in">右侧入</button>
+    <button id="left_out">左侧出</button>
+    <button id="right_out">右侧出</button>
+  </div>
+  <div id="for_queue"></div>
+
+  <script>
+    (function() {
+      var queue = [];
+
+      var showQueue = function() {
+        var tmp = [];
+        for (var index in queue) {
+          tmp.push("<div>" + queue[index] + "</div>")
+        }
+
+        document.getElementById('for_queue').innerHTML = tmp.join('');
+      }
+
+      document.getElementById('clickArea').addEventListener("click", function(e) {
+        var btn = e.target;
+        var _in = document.getElementById('in');
+
+        switch (btn.id) {
+          case "left_in":
+            if (_in.value == '') {
+              return;
+            };
+            queue.unshift(_in.value);
+            break;
+          case "right_in":
+            if (_in.value == '') {
+              return;
+            };
+            queue.push(_in.value);
+            break;
+          case "left_out":
+            queue.shift();
+            break;
+          case "right_out":
+            queue.pop();
+            break;
+          default:
+            break;
+
+        }
+        _in.value = '';
+        showQueue();
+      })
+
+    })()
+  </script>
+</body>
+
+</html>
