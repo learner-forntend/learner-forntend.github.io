@@ -1,0 +1,35 @@
+.aqi-chart-wrap {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 500px
+}
+
+.aqi-chart-wrap div:nth-child(3n){
+background-color: red;
+}
+.aqi-chart-wrap div:nth-child(3n+1){
+background-color: blue;
+}
+
+.aqi-chart-wrap div:nth-child(3n+2){
+background-color: green;
+}
+
+
+.aqi-chart-wrap div.day {
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.aqi-chart-wrap div.week {
+  width: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.aqi-chart-wrap div.month {
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
