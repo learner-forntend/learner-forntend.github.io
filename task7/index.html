@@ -90,22 +90,25 @@
                 <p>每个城市有不同的活动信息,请自主查询您所需要了解的城市</p>
             </div>
 
-            <div class="input">
-                <input placeholder="中国">
-                <input class="active" placeholder="省份">
-                <input placeholder="城市">
-                <input type="button" value="搜索"/>
-            </div>
-            <div class="drop-down">
-                <ul>
-                    <li class="active"><span></span>北京市</li>
-                    <li>天津市</li>
-                    <li>河北省</li>
-                    <li>陕西省</li>
-                    <li>内蒙古自治区</li>
-                    <li>辽宁省</li>
-                </ul>
-            </div>
+            <form class="input">
+                <div class="inline-div"><input placeholder="中国"></div>
+                <div class="inline-div"><input placeholder="省份"></div>
+                <div class="inline-div active"><input placeholder="城市">
+
+                    <div class="drop-down">
+                        <ul>
+                            <li class="active"><span></span>北京市</li>
+                            <li>天津市</li>
+                            <li>河北省</li>
+                            <li>陕西省</li>
+                            <li>内蒙古自治区</li>
+                            <li>辽宁省</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inline-div"><input class="btn" type="button" value="搜索"/></div>
+            </form>
+
         </div>
 
         <div class="activity-photo">
@@ -117,7 +120,7 @@
                     <p>新社区大联盟</p>
                 </li>
                 <li>
-                    <p>上海活动</p>
+                    <h3>上海活动</h3>
 
                     <p>夜上海新景区探索</p>
 
@@ -140,8 +143,9 @@
 
     </section>
     <section class="time">
-        <div class="position-relative">
-            <div class="time-picture">
+        <div class="clearfix">
+            <div class="time-picture float-left">
+                <div class="trans"></div>
                 <div class="text">
                     <p>新世界</p>
 
@@ -152,7 +156,7 @@
                     <p>2016.04.01</p>
                 </div>
             </div>
-            <div class="right-text">
+            <div class="right-text float-left">
                 <div>
                     <p>新世界 / <span class="red">01</span></p>
 
@@ -212,6 +216,7 @@
         <main>
             <ul>
                 <li class="agreements">
+
                     <div class="agreement">
                         <p>新世界志愿协议</p>
 
@@ -233,19 +238,20 @@
                     </div>
                 </li>
                 <li class="form-input">
-                    <div>
-                        <span><label>姓名:</label><input></span>
-                        <span><label>年龄:</label><input></span>
-                    </div>
-                    <div>
-                        <span><label>联系方式:</label><input></span>
-                        <span><label>联系地址:</label><input></span>
-                    </div>
-                    <div class="textarea">
-                        <span>请简单描述您的梦想生活:</span>
-                        <textarea></textarea></div>
-                    <div><input value="提交申请" class="submit" type="button"></div>
-
+                    <form>
+                        <div>
+                            <span><label>姓名:</label><input></span>
+                            <span><label>年龄:</label><input></span>
+                        </div>
+                        <div>
+                            <span><label>联系方式:</label><input></span>
+                            <span><label>联系地址:</label><input></span>
+                        </div>
+                        <div class="textarea">
+                            <span>请简单描述您的梦想生活:</span>
+                            <textarea></textarea></div>
+                        <div><input value="提交申请" class="submit" type="button"></div>
+                    </form>
                 </li>
             </ul>
         </main>
