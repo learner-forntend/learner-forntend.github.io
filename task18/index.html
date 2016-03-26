@@ -34,18 +34,22 @@
         var btn = e.target;
         var _in = document.getElementById('in');
 
+        //函数式
+        function alertNow(fn){
+          if(_in.value==''){
+            return;
+          };
+
+          fn.call(queue,_in.value);
+          _in.value = "";
+        }
+
         switch (btn.id) {
           case "left_in":
-            if (_in.value == '') {
-              return;
-            };
-            queue.unshift(_in.value);
+            alertNow([].unshift);
             break;
           case "right_in":
-            if (_in.value == '') {
-              return;
-            };
-            queue.push(_in.value);
+          alertNow([].push);
             break;
           case "left_out":
             alert(queue.shift());

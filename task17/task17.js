@@ -88,8 +88,11 @@ var pageState = {
 /**
  * 渲染图表
  */
+
+var setDate = setChartDate();
+
 function renderChart() {
-  setChartDate()(pageState.nowSelectCity, pageState.nowGraTime);
+  setDate(pageState.nowSelectCity, pageState.nowGraTime);
   document.querySelector(".aqi-chart-wrap").innerHTML = "请稍等，正在绘图....";
   var tmp = [];
 
