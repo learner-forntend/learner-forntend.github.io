@@ -5,7 +5,10 @@
   var container = document.querySelector("#container");
   var timmers = new Array(3);
   createDomeTree(container, 5);
+  document.querySelector("#btn_area").addEventListener("click", walk);
 
+
+  ////////////////////////////////////////////////////////////////
   function createDomeTree(element, count) {
     if (count <= 0) return;
     count--;
@@ -15,10 +18,7 @@
     createDomeTree(element.children[1], count);
   }
 
-  document.querySelector("#btn_area").addEventListener("click", walk);
 
-
-  ////////////////////////////////////////////////////////////////
   function walk(event) {
     var fn;
     var _id = event.target.id;
@@ -39,7 +39,6 @@
       default:
         return;
     }
-
     for (var _index in timmers) {
       if (_index !== timmer_index && timmers[_index]) {
         clearTimeout(timmers[_index]);

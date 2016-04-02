@@ -104,7 +104,6 @@ function renderChart() {
         chartData.type + "' style='height:" + (8 * chartData.datas[data] / 10) + "px' title='" + data + " : " + chartData.datas[data] + "'></div>")
     }
   }
-  console.log(tmp.join(''));
   document.querySelector(".aqi-chart-wrap").innerHTML = tmp.join('');
 
 }

@@ -1,15 +1,27 @@
 ;
 (function() {
   "use strict";
+  var isWalk = false;
+  var clickedDom;
   var queue_elements = [];
   var deep_walk_index = 0;
   var container = document.querySelector("#container");
+  var add_dom = document.querySelector("#add_dom_text");
   var randomWords = ['cat', 'dog', 'yes', 'sc', 'ac', 'td', 'll', 'tx', 'al', 'no'];
   createDomTree(container, 2);
   var timmers = new Array(4);
   document.querySelector(".option").addEventListener('click', walk);
+  document.querySelector("#container").addEventListener('click', clickDom);
 
   //////////////////////////////////////////////////////////////////////
+  function clickDom(event) {
+    if (isWalk) return;
+    clearTimmer();
+    var target = event.target;
+    clickedDom = target;
+    target.className = "clicked";
+  }
+
   function walk(event) {
     var _id = event.target.id;
     switch (_id) {
@@ -25,18 +37,49 @@
       case "deep_search":
         search(deep_walk, 3);
         break;
+      case "add_dom":
+        addDom();
+        break;
+      case "delete_dom":
+        deleteDom();
+        break;
       default:
         return;
     }
+  }
+
+  function addDom() {
+    if (!clickedDom) {
+      alert("请选择元素");
+      return;
+    }
+    if (add_dom.value === "") {
+      alert("输入名称");
+      return;
+    }
+    var new_dom = document.createElement("div");
+    new_dom.innerText = add_dom.value;
+    clickedDom.appendChild(new_dom);
+  }
+
+  function deleteDom() {
+    if (!clickedDom) {
+      alert("请选择元素");
+      return;
+    }
+    clickedDom.parentNode.removeChild(clickedDom);
+    clickedDom = null;
   }
 
   function walk_tree(fn, timmer_id) {
     clearTimmer();
     fn.call(null, container)
     var _index = 0
+    isWalk = true;
 
     function _walk() {
       if (_index >= queue_elements.length) {
+        isWalk = false
         return;
       }
 
@@ -60,9 +103,11 @@
     fn.call(null, container);
     var textRegx = new RegExp(input_value.value);
     var _index = 0;
+    isWalk = true;
 
     function _walk() {
       if (_index >= queue_elements.length) {
+        isWalk = false;
         return;
       };
       queue_elements[_index].className = "active";
@@ -82,6 +127,11 @@
 
 
   function clearTimmer() {
+    if (clickedDom) {
+      clickedDom.className = "";
+      clickedDom = null;
+    }
+
     deep_walk_index = 0;
     for (var index in timmers) {
       if (timmers[index]) clearTimeout(timmers[index]);

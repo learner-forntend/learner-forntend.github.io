@@ -22,3 +22,7 @@ div.chosen {
 div.option {
   width: 100%
 }
+
+div.clicked{
+  background-color: rgb(236, 175, 165)
+}

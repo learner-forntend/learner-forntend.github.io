@@ -5,6 +5,9 @@
   height: 500px
 }
 
+.aqi-chart-wrap div{
+  height: 0;
+}
 .aqi-chart-wrap div:nth-child(3n){
 background-color: red;
 }
