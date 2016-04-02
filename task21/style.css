@@ -1,0 +1,38 @@
+#tag_show {
+  margin-top: 20px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+#tag_show div {
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px 10px;
+  display: inline;
+  color: white;
+  background-color: rgb(123, 181, 223);
+}
+#tag_show div.active {
+  background-color: rgb(215, 43, 43);
+}
+#hobby_show {
+  margin-top: 20px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+#hobby_show div {
+  margin-left: 5px;
+  background-color: rgb(230, 215, 118);
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline;
+}
+.btn {
+  background-color: rgb(57, 139, 205);
+  color: white;
+  padding: 5px;
+  border: 5px;
+  border-radius: 2px;
+}

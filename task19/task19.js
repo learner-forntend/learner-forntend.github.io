@@ -2,6 +2,8 @@
   'use strict';
   var queue = [];
 
+
+
   function render() {
     var tmp = [];
     for (var index in queue) {
@@ -21,6 +23,9 @@
       }
     }
   }
+
+
+
 
   function orderSort() {
     var i, j;
@@ -64,21 +69,6 @@
       }, 1000 + count)
     };
     inte();
-
-    // for (var m = 0; m < changeOrder.length; m++) {
-    //
-    //   (function(m){
-    //     setTimeout(function() {
-    //       var arr = changeOrder[m].split("-");
-    //       var i = arr[0];
-    //       var j = arr[1];
-    //       var tmp = queue[j];
-    //       queue[j] = queue[i];
-    //       queue[i] = tmp;
-    //       render();
-    //     }, (m + 1) * 1000);
-    //   })(m);
-    // }
   };
 
 
@@ -94,17 +84,17 @@
     var _in = document.getElementById('in');
 
 
-    function alertNow(fn){
-      if(_in.value==''){
+    function alertNow(fn) {
+      if (_in.value == '') {
         return;
       };
-      if(queue.length==60){
+      if (queue.length == 60) {
         alert("容量不足,请勿添加")
       };
-      if((+_in.value)<10||(+_in.value)>100){
+      if ((+_in.value) < 10 || (+_in.value) > 100) {
         alert("请输入0-100之间的数");
       };
-      fn.call(queue,_in.value);
+      fn.call(queue, _in.value);
       _in.value = "";
     }
 
@@ -113,7 +103,7 @@
         alertNow([].unshift);
         break;
       case "right_in":
-      alertNow([].push);
+        alertNow([].push);
         break;
       case "left_out":
         alert(queue.shift());
