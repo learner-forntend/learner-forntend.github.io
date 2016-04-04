@@ -1,6 +1,7 @@
 .container {
     border: solid 2px;
     padding: 30px 50px;
+    overflow: hidden;
 }
 .inner {
     width: 200px;
@@ -8,11 +9,11 @@
     margin: auto;
 }
 .tree {
-    display: inline-block;
+    float: left;
     margin-right: 200px;
 }
 .search {
-    display: inline-block;
+    float: left;
     margin-left: 100px;
     border: solid 2px;
     height: 250px;
