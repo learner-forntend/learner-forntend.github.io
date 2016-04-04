@@ -73,7 +73,6 @@
             _node.className = "node";
             _node.innerHTML = tmp.join("");
             this.element.appendChild(_node);
-            console.log(this.element);
             var new_node = new TreeNode(_node, this, text);
             this.children.push(new_node);
             if (!this.isOpen) {
@@ -92,9 +91,6 @@
             _nodeElement = _nodeElement.parentNode;
         }
         var _targetNode = _nodeElement.node;
-        console.log(_targetClassName);
-        console.log(_targetNode);
-
         if (_targetClassName.indexOf("text") != -1) {
             _targetNode.toggle();
         } else if (_targetClassName.indexOf("add") != -1) {
