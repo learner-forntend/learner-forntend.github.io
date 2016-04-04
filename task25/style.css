@@ -1,0 +1,78 @@
+.container {
+    border: solid 2px;
+    padding: 30px 50px;
+}
+.inner {
+    width: 200px;
+    border: solid 2px;
+    margin: auto;
+}
+.tree {
+    display: inline-block;
+    margin-right: 200px;
+}
+.search {
+    display: inline-block;
+    margin-left: 100px;
+    border: solid 2px;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+
+}
+.search div{
+  margin: auto;
+  padding-left: 30px;
+  padding-top: 50px
+}
+.none {
+    display: none;
+}
+span {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+span.text {
+    color: rgb(18, 127, 147);
+    font-size: 14px;
+    padding: 2px 4px;
+}
+span.arrow-down {
+    width: 0;
+    height: 0;
+    border-top: solid 10px rgb(18, 127, 147);
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+}
+span.arrow-left {
+    width: 0;
+    height: 0;
+    border-left: solid 10px rgb(18, 127, 147);
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+}
+span.add {
+    width: 15px;
+    height: 15px;
+    background-image: url("image/close.png");
+    background-size: cover;
+    transform: rotate(45deg);
+}
+span.delete {
+    width: 15px;
+    height: 15px;
+    background-image: url("image/close.png");
+    background-size: cover;
+}
+.node .node {
+    margin-left: 25px;
+}
+
+div.searching{
+  background-color: rgba(117, 122, 191,0.5);
+}
+
+div.on{
+  background-color: rgba(26, 159, 28,0.6);
+}
