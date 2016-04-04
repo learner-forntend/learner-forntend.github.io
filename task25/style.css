@@ -56,16 +56,25 @@ span.arrow-left {
 span.add {
     width: 15px;
     height: 15px;
-    background-image: url("image/close.png");
-    background-size: cover;
-    transform: rotate(45deg);
+
 }
+.label:hover span.add{
+  background-image: url("image/close.png");
+  background-size: cover;
+  transform: rotate(45deg);
+}
+
 span.delete {
     width: 15px;
     height: 15px;
-    background-image: url("image/close.png");
-    background-size: cover;
+
 }
+
+.label:hover span.delete{
+  background-image: url("image/close.png");
+  background-size: cover;
+}
+
 .node .node {
     margin-left: 25px;
 }
