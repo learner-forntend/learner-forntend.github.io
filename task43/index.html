@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>task43</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+        var images = [{
+            title: "title0",
+            content: "content",
+            url: "http://placehold.it/1300x1300/116E00/fff"
+        }, {
+            title: "title1",
+            content: "content",
+            url: "http://placehold.it/800x800/4C6E00/fff"
+        }, {
+            title: "title2",
+            content: "content",
+            url: "http://placehold.it/800x800/4C8899/fff"
+        }, {
+            title: "title3",
+            content: "content",
+            url: "http://placehold.it/600x600/0033DF/fff"
+        }, {
+            title: "title4",
+            content: "content",
+            url: "http://placehold.it/600x600/003377/fff"
+        }, {
+            title: "title5",
+            content: "content",
+            url: "http://placehold.it/600x600/0010DF/fff"
+        }, {
+            title: "title6",
+            content: "content",
+            url: "http://placehold.it/500x500/22AB11/fff"
+        }, {
+            title: "title7",
+            content: "content",
+            url: "http://placehold.it/300x300/56AB00/fff"
+        }, {
+            title: "title8",
+            content: "content",
+            url: "http://placehold.it/200x200/00BB00/fff"
+        }, {
+            title: "title9",
+            content: "content",
+            url: "http://placehold.it/200x200/BB0000/fff"
+        }, {
+            title: "title10",
+            content: "content",
+            url: "http://placehold.it/200x200/56AB22/fff"
+        }];
+
+        var datas = [
+            [images[0]],
+            [images[1], images[2]],
+            [images[1], images[3], images[4]],
+            [images[3], images[5], images[4], images[6]],
+            [images[5], images[7], images[8], images[9], images[6]],
+            [images[5], images[8], images[9], images[8], images[9], images[10]]
+        ];
+
+        var fragment = document.createDocumentFragment();
+        for (var i = 0; i < 6; i++) {
+            var data = datas[i];
+
+            var container = document.createElement("div");
+            container.className = "container";
+
+            for (var j = 0, len = data.length; j < len; j++) {
+                var imgData = data[j];
+                console.log(imgData);
+                var imgContainer = document.createElement("div");
+                imgContainer.className = "imgContainer";
+                var imagePic = document.createElement("img");
+                imagePic.src = imgData.url;
+                var titleDiv = document.createElement("div");
+                titleDiv.innerText = imgData.title;
+                var contentDiv = document.createElement("div");
+                contentDiv.innerText = imgData.content;
+                imgContainer.appendChild(imagePic);
+                imgContainer.appendChild(titleDiv);
+                imgContainer.appendChild(contentDiv);
+                container.appendChild(imgContainer);
+            }
+            fragment.appendChild(container);
+        }
+        document.body.appendChild(fragment);
+    </script>
+</body>
+
+</html>
